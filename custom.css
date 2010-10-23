@@ -1,0 +1,414 @@
+/*
+File:			custom.css
+Description:	Custom styles for Thesis
+
+BASIC USAGE:
+
+If you have enabled the custom stylesheet in the Thesis options panel, the <body> tag 
+will be appended with the "custom" class, like so: <body class="custom">. You can use 
+the "custom" class to override *any* CSS declarations contained in the style.css file.
+
+For example, if you wish to change the default link color to green, you would add the 
+following declarations to this file:
+
+	.custom a, .custom a:visited { color: #090; }	<--- This makes links green
+	.custom a:hover { color: #00f; }	<--- This makes links blue when you mouse over them
+
+WHY THIS WORKS:
+
+By using the "custom" class, you are creating more specific CSS declarations for HTML
+elements. CSS styling is applied through rules of specificity, and because declarations
+prepended with .custom are more specific, they get applied when the page is rendered!
+
+More information about styling your Thesis installation using this file can be found
+in the User's Guide:
+	http://diythemes.com/thesis/rtfm/customizing-thesis-with-customcss/
+*/
+
+/* @font-face{ font-family: "Museo"; src: url(http://www.violetminded.com/fonts/Museo500.otf) format("opentype"); }*/
+
+body{ font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif; }
+
+.custom .entry-title, h1, h2, h3, h4, h5, h6 { 
+    font-family: "Museo", "Hoefler Text", Palatino, "Palatino Linotype", serif; 
+}
+
+.custom .entry-title a { color:#4f0074; }
+.custom .entry-title a:hover { color:#ff9600; }
+
+.custom h1, h2 {font-family: "Museo", "Hoefler Text", Palatino, "Palatino Linotype", serif; color:#4f0074;}
+
+.custom h3 { font-family: "Museo", "Hoefler Text", Palatino, "Palatino Linotype", serif; color:#ff9600;}
+
+.custom a:link{
+	color:#4f0074;
+}
+
+.custom a:visited{
+	color:#4f0074;
+}
+
+.custom a:hover{
+	color:#ff9600;
+}
+
+.custom #sidebars #sidebar_1 h3 { display:block; background:#ff9600; color:#ffffff; font-size:14px; text-transform:none; font-variant:normal; padding:5px; }
+.custom #sidebars #sidebar_2 h3 { display:block; background:#ff9600; color:#ffffff; font-size:14px; text-transform:none; font-variant:normal; padding:5px; }
+
+
+/* Bitchin' banner */
+.custom #header #logo a { display: block; background: url('images/banner.jpg') no-repeat; outline: none; border: none; width:971px; height:208px; }
+
+/* Solving the problem of the background within the header */
+
+.custom #header { padding: 0; }
+
+/* This line gets rid of the site title & tagline by casting them out to far left field */
+.custom #header #logo, .custom #header #tagline { text-indent: -9999px; }
+
+/* This line collapses the vertical space of the tagline so that there isn't unnecessary white space after the header image */
+
+/* This is a bit of a kludge, but it seems to work. */
+.custom #header #tagline { height: 0; }
+
+.custom b, strong {font-weight:bolder; color:#356101;}
+
+.custom #page { 
+    width:971px;
+	margin: 0px; 
+}
+
+.custom #content .post {
+	margin: 0px 5px;
+}
+
+.custom #content.hfeed .teasers_box.top {
+	margin-right: 5px;
+}
+
+.custom #sidebar_2 .sidebar_list {
+	padding-right: 0px;
+}
+
+/* Custom Nav */
+
+.custom .menu { background:#909090; font-family: "Museo", "Hoefler Text", Palatino, "Palatino Linotype", serif; font-size:18px; border-style:none; border-bottom:none; padding-bottom:1px; }
+
+.custom .menu .tab-1 a { background:#909090; color:#ffffff; text-transform:lowercase; border:none; letter-spacing:-0.02em; }
+.custom .menu .tab-1 a:hover { background:#v; color:#ffffff; text-transform:lowercase; border:none; letter-spacing:-0.02em; }
+
+.custom .menu .tab-2 a { background:#909090; color:#ffffff; text-transform:lowercase; border:none; letter-spacing:-0.02em; }
+.custom .menu .tab-2 a:hover { background:#ff9600; color:#ffffff; text-transform:lowercase; border:none; letter-spacing:-0.02em; }
+
+.custom .menu .tab-3 a { background:#909090; color:#ffffff; text-transform:lowercase; border:none; letter-spacing:-0.02em; }
+.custom .menu .tab-3 a:hover { background:#ff9600; color:#ffffff; text-transform:lowercase; border:none; letter-spacing:-0.02em; }
+
+.custom .menu .tab-4 a { background:#909090; color:#ffffff; text-transform:lowercase; border:none; letter-spacing:-0.02em; }
+.custom .menu .tab-4 a:hover { background:#ff9600; color:#ffffff; text-transform:lowercase; border:none; letter-spacing:-0.02em; }
+
+.custom .menu .tab-5 a { background:#909090; color:#ffffff; text-transform:lowercase; border:none; letter-spacing:-0.02em; }
+.custom .menu .tab-5 a:hover { background:#ff9600; color:#ffffff; text-transform:lowercase; border:none; letter-spacing:-0.02em; }
+
+.custom .menu li a { background:#909090; color:#ffffff; text-transform:lowercase; border:none; letter-spacing:-0.02em; }
+.custom .menu li a:hover { background:#ff9600; color:#ffffff; text-transform:lowercase; border:none; letter-spacing:-0.02em; text-decoration:none; }
+
+/* Custom Content, Baby */
+
+.custom #content_box { background:#ffffff; }
+
+/* Sexy Sidebar */ 
+
+.custom #sidebars { background:#ffffff; }
+
+.custom #sidebar_1 ul.sidebar_list {
+    padding-right: 0px;
+}
+
+/* This footer is a floozy-bot */
+
+.custom #footer { 
+    background:#356101; 
+	color:#ffffff; 
+	text-align:center; 
+}
+
+.custom #footer a {
+	/* color:#ff9600; */
+}
+
+.custom #article_links .bookbox {
+	width: 450px;
+	overflow: hidden;
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	float: none;
+	text-align: center;
+	padding: 5px;
+	border: solid 1px #DDDDDD;
+	background-color: #FFFFCC;
+} 
+
+ 
+.custom #article_links .bookbox img.cover {
+	float: left;
+} 
+
+.custom span.booktitle {
+  color: red; 
+}
+
+.custom div.bookblurb {
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+
+.custom .notebox {
+	width: 250px;
+	overflow: hidden;
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	float: right;
+	text-align: center;
+	padding: 5px;
+	border: solid 1px #DDDDDD;
+	background-color: #FFFFCC;
+}
+
+
+/* Block spacing resets */
+.custom p {
+  margin-bottom: .5em; 
+}
+.custom p + p {
+  text-indent: 1.0em;
+  margin-top: .5em; 
+}
+
+.custom ol + p {
+  text-indent: 0em;
+  margin-top: .5em; 
+}
+
+/* Dangerous stuff. */
+.custom div + p {
+  text-indent: 1.5em;
+  margin-top: .5em; 
+}
+
+
+
+/* Small, medium, large thematic break. */
+p.stb { text-indent: 0; margin-top: 0.83em; }
+p.mtb { text-indent: 0; margin-top: 2.17em; }
+p.ltb { text-indent: 0; margin-top: 3.08em; }
+
+
+.custom pre {
+	font-size: 11px;
+	background: none;
+	border: none;
+}
+
+
+.custom ol {
+  padding-left: 1em;
+}
+
+.custom dl {
+  padding-left: 1em;
+}
+
+.custom dd {
+  padding-left: 2em;
+}
+
+
+.custom input.submit {
+   font-family: arial;
+   font-size: 14pt;
+   color: #FFFFFF;
+   background: #ffa20f;
+   border: 2px outset #d7b9c9
+}
+
+.custom input.coupon {
+   font-family: arial;
+   font-size: 14pt;
+   color: #FFFFFF;
+   background: #01622E;
+   border: 2px outset #d7b9c9
+}
+
+.custom p.estread {
+   padding-bottom: 1em;
+   font-size: 65%;
+   font-weight: bold;
+}
+
+.custom p.estread + p {
+  text-indent: 0em;
+  margin-top: 0; 
+}
+
+
+
+.custom div.bio {
+
+	border-width: 1px; 
+	border-style: solid; 
+    font-size: 85%;
+	/* border-color: #002DFF; */
+    /* background-color: #5DCA8F; */
+	margin-left: 1em; 
+	margin-right: 1em;
+	margin-bottom: 1em;
+	margin-top: 1em;
+	padding-left: 1em;
+}
+
+
+/* ----- From here to next line, maybe delete --- */
+.custom .format_text input,
+.custom .sidebar .text_input {
+ width:auto;
+}
+
+
+
+.custom a:link .internal{ 
+   color:#dd0000;
+}
+
+
+.custom .format_text input, 
+.custom #commentform input, #commentform textarea {
+width:auto;
+}
+
+.custom .format_text input.madlibtext {
+width:auto;
+}
+
+.custom .format_text .text_input {
+ width:auto;
+}
+/* ----- From here to next line, maybe delete --- */
+
+
+.notweetmeme #page div.tweetmeme_button {
+	display: none;
+}
+
+
+/*---------------------------------*/
+/* WIDGETIZED FOOTER               */
+/* Mike Nichols - October 17, 2009 */
+/*---------------------------------*/
+/* More info here: */
+/* http://thesisthemetools.com/tutorial-widgetized-fat-footer/ */
+/* footer widget area setup */
+#footer_setup {
+	/* widgetized footer background (not footer background) */
+	background: #eeeeee;
+	/* widget padding */
+	padding: 16px 16px 16px 16px;
+	/* margin at bottom of widgets */
+	margin-bottom: 10px;
+	/* do not change this! */
+	overflow: hidden;
+}
+
+/* widget item setup */
+#footer_setup .footer_items {
+	/* contents alignment */
+	text-align: left;
+	/* widget width */
+	width: 210px;
+	/* space between widgets */
+	padding-right: 10px;
+	/* text color */
+	color: #007; /*#2361A1;*/
+	/* do not change these! */
+	display: inline-block;
+	float: left;
+	height: 100%;
+}
+
+/* widget item headers*/
+#footer_setup .footer_items h3 {
+	/* font size */
+	font-size: 1em;
+	/* bold or not */
+	font-weight: bold;
+	/* uppercase or not */
+	text-transform: uppercase;
+	/* space out the letters*/
+	letter-spacing: 0px;
+	/* font color*/
+	color: #000000;
+	/* padding under header text */
+	padding-bottom: 3px;
+	/* border under header text */
+	border-bottom: 3px solid #ffdf00;
+	/* distance between border and widget text */
+	margin-bottom: 5px;
+}
+
+/* do not change these! */
+#footer_setup .footer_items ul li { list-style: none; }
+#footer_setup .footer_items ul { margin: 0px; padding: 0px; }
+
+.custom p.legal {
+	background: #356101;	
+	color:#ff9600;
+}
+
+.custom p.violetminded {
+	background: #356101;	
+	color:#ff9600;
+}
+
+
+/* Feature box */
+.custom #feature_box {
+    overflow: auto;
+    background-color: #fff;
+    margin-top: 18px;
+    padding: 10px;
+    border: solid;
+    border-width: 1px;
+    border-color: #000;
+    height:auto;
+    min-height:100%;
+}
+
+.custom #feature_box * + p {
+    text-indent: 0em;
+}
+
+.custom #feature_box h2 {
+    padding-bottom: 1em;    
+}
+    
+.custom #feature_box h2 a {
+    text-indent: 0em;
+    text-decoration: underline;
+/*    color: #E9BA3D; */
+}
+
+.custom #feature_box div.featuredpost {
+    text-align: center;
+    width: 29%;
+    float: left;
+}
+
+.custom #feature_box div.featuredheadline {
+    width: 69%;
+    float: right;
+    display: inline;
+}
