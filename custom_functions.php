@@ -179,206 +179,6 @@ function plugin_template() {
 }
 
 
-///////  THESIS 1.8 ////////////////////
-function page_noheader_nofooter_nosidebar_18() {
-	global $thesis_design;
-
-	echo apply_filters('thesis_doctype', '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">') . "\n";
-?>
-<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
-<?php
-	thesis_head::build();
-	echo "<body" . thesis_body_classes() . ">\n"; #filter
-	thesis_hook_before_html(); #hook
-	echo "<div id=\"container\">\n";
-	echo "<div id=\"page\">\n";
-	
-	thesis_hook_before_content_box(); #hook
-	echo "\t<div id=\"content_box\" class=\"no_sidebars\">\n";
-	thesis_hook_content_box_top(); #hook
-
-	#thesis_18/lib/html/frameworks.php Line 56
-	thesis_hook_before_content_area(); #hook
-	echo "<div id=\"content_area\" class=\"full_width\">\n";
-	echo "<div class=\"page\">\n";
-	#thesis_18/lib/html/content_box.php Line 57
-	thesis_content_column();
-	echo "</div>\n";
-	echo "</div>\n";
-	#thesis_18/lib/html/frameworks.php Line 66
-	thesis_hook_after_content_area(); #hook
-	
-	thesis_hook_content_box_bottom(); #hook
-	echo "\t</div>\n";
-	thesis_hook_after_content_box(); #hook
-	
-	echo "</div>\n";
-	echo "</div>\n";
-	
-	thesis_ie_clear();
-	thesis_javascript::output_scripts();
-	thesis_hook_after_html(); #hook
-	echo "</body>\n</html>";    
-}
-//////////////// END: Custom page: no header, no footer, no sidebars /////
-
-//////////////// Custom page: header, no footer, no sidebars /////
-function page_header_nofooter_nosidebar_18() {
-	global $thesis_design;
-
-	echo apply_filters('thesis_doctype', '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">') . "\n";
-?>
-<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
-<?php
-	thesis_head::build();
-	echo "<body" . thesis_body_classes() . ">\n"; #filter
-	thesis_hook_before_html(); #hook
-	echo "<div id=\"container\">\n";
-	echo "<div id=\"page\">\n";
-
-	thesis_wrap_header();
-	
-	thesis_hook_before_content_box(); #hook
-	echo "\t<div id=\"content_box\" class=\"no_sidebars\">\n";
-	thesis_hook_content_box_top(); #hook
-
-	#thesis_18/lib/html/frameworks.php Line 56
-	thesis_hook_before_content_area(); #hook
-	echo "<div id=\"content_area\" class=\"full_width\">\n";
-	echo "<div class=\"page\">\n";
-	#thesis_18/lib/html/content_box.php Line 57
-	thesis_content_column();
-	echo "</div>\n";
-	echo "</div>\n";
-	#thesis_18/lib/html/frameworks.php Line 66
-	thesis_hook_after_content_area(); #hook
-	
-	thesis_hook_content_box_bottom(); #hook
-	echo "\t</div>\n";
-	thesis_hook_after_content_box(); #hook
-	
-	echo "</div>\n";
-	echo "</div>\n";
-	
-	thesis_ie_clear();
-	thesis_javascript::output_scripts();
-	thesis_hook_after_html(); #hook
-	echo "</body>\n</html>";    
-}
-//////////////// END: Custom page: header, no footer, no sidebars /////
-
-//////////////// Custom page: header, footer, no sidebars /////
-function page_header_footer_nosidebar_18() {
-	global $thesis_design;
-
-	echo apply_filters('thesis_doctype', '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">') . "\n";
-?>
-<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
-<?php
-	thesis_head::build();
-	echo "<body" . thesis_body_classes() . ">\n"; #filter
-	thesis_hook_before_html(); #hook
-	echo "<div id=\"container\">\n";
-	echo "<div id=\"page\">\n";
-
-	thesis_wrap_header();
-	
-	thesis_hook_before_content_box(); #hook
-	echo "\t<div id=\"content_box\" class=\"no_sidebars\">\n";
-	thesis_hook_content_box_top(); #hook
-
-	#thesis_18/lib/html/frameworks.php Line 56
-	thesis_hook_before_content_area(); #hook
-	echo "<div id=\"content_area\" class=\"full_width\">\n";
-	echo "<div class=\"page\">\n";
-	#thesis_18/lib/html/content_box.php Line 57
-	thesis_content_column();
-	echo "</div>\n";
-	echo "</div>\n";
-	#thesis_18/lib/html/frameworks.php Line 66
-	thesis_hook_after_content_area(); #hook
-	
-	thesis_hook_content_box_bottom(); #hook
-	echo "\t</div>\n";
-	thesis_hook_after_content_box(); #hook
-	
-	echo "</div>\n";
-	echo "</div>\n";
-
-	thesis_wrap_footer();
-		
-	thesis_ie_clear();
-	thesis_javascript::output_scripts();
-	thesis_hook_after_html(); #hook
-	echo "</body>\n</html>";    
-}
-//////////////// END: Custom page: header, footer, no sidebars /////
-
-
-/// Helper functions
-
-function is_thesis_two_columns() {
-    
-}
-
-function is_thesis_three_columns() {
-    
-}
-
-
-
-//////////////// Custom page: header, footer, custom sidebars /////
-function page_header_footer_sidebar_18() {
-	global $thesis_design;
-
-	echo apply_filters('thesis_doctype', '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">') . "\n";
-?>
-<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
-<?php
-	thesis_head::build();
-	echo "<body" . thesis_body_classes() . ">\n"; #filter
-	thesis_hook_before_html(); #hook
-	
-	#thesis_18/lib/html/frameworks.php Line 28
-	echo "<div id=\"container\">\n";
-	echo "<div id=\"page\">\n";
-
-	thesis_wrap_header();
-
-	
-	thesis_wrap_footer();
-		
-	thesis_ie_clear();
-	thesis_javascript::output_scripts();
-	thesis_hook_after_html(); #hook
-	echo "</body>\n</html>";    
-    }
-
-
-
-function page_hrecipe_18() {
-    get_header(apply_filters('thesis_get_header', $name));
-    echo '<div id="container">'."\n";
-    echo '<div id="page">'."\n";
-    thesis_header_area();
-    echo '	<div id="content_box">'."\n";
-    thesis_content_column();
-
-    echo '		<div id="sidebars">' . "\n";
-    echo '			<div id="sidebar_3" class="sidebar">'."\n";
-    echo '				<ul class="sidebar_list">'."\n";
-    dynamic_sidebar('hRecipe Sidebar');
-    echo '				</ul>'."\n";
-    echo '			</div>'."\n";
-    echo '		</div>' . "\n";
-
-    echo '	</div><!--content_box-->'."\n";
-    thesis_footer_area();
-    echo '</div><!--page-->'."\n";
-    echo '</div><!--container-->'."\n";
-    get_footer(apply_filters('thesis_get_footer', $name));
-}
-
 
 ///////  THESIS 1.6 ////////////////////
 //////////////// Custom page: no header, no footer, no sidebars /////
@@ -640,66 +440,8 @@ add_shortcode('ecblurb', 'ecourse_blurb');
 
 
 
-/*---------------------------------*/
-/* WIDGETIZED FOOTER - 4 COLUMNS   */
-/* Mike Nichols - October 17, 2009 */
-/*---------------------------------*/
 
-/*-----------------------------------------*/
-/* register sidebars for widgetized footer */
-if (function_exists('register_sidebar')) {
-	$sidebars = array(1, 2, 3, 4);
-	foreach($sidebars as $number) {
-		register_sidebar(array(
-			'name' => 'Footer ' . $number,
-			'id' => 'footer-' . $number,
-			'before_widget' => '',
-			'after_widget' => '',
-			'before_title' => '<h3>',
-			'after_title' => '</h3>'
-		));
-	}
-}
 
-/*-----------------------*/
-/* set up footer widgets */
-function widgetized_footer() {
-?>
-	<div id="footer_setup">
-
-		<div class="footer_items">
-  	  		<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer 1') ) : ?>
-    		<?php endif; ?>
-		</div>
-
-		<div class="footer_items">
-    		<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer 2') ) : ?>
-    		<?php endif; ?>
-		</div>
-
-		<div class="footer_items">
-    		<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer 3') ) : ?>
-    		<?php endif; ?>
-		</div>
-
-		<div class="footer_items">
-    		<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer 4') ) : ?>
-    		<?php endif; ?>
-		</div>
-		
-	</div>
-
-<p class="legal">
-	Copyright &copy; 2009-2010 All Rights Reserved | 
-	<a href="http://inventiumsystems.com/">Inventium Systems</a>  | 
-	<a href ="http://website-in-a-weekend.net/disclaimer">Disclaimer</a> | 
-	<a href ="http://website-in-a-weekend.net/privacy-policy">Privacy Policy</a> | 
-	<a href ="http://website-in-a-weekend.net/terms-and-conditions">Terms & Conditions</a> | 
-Design by <a href="http://violetminded.com" title="Visit violetminded, Queen of GPO">violetminded</a>.
-</p>
-<?php
-}
-add_action('thesis_hook_footer','widgetized_footer');
 
 
 function bpe_feature() {
@@ -740,6 +482,12 @@ function preheader_bar() {
 <?php 
 }
 //add_action('thesis_hook_before_header','preheader_bar');
+
+
+if (file_exists(THESIS_CUSTOM . '/wiaw_fat_footer.php')){
+	include(THESIS_CUSTOM . '/wiaw_fat_footer.php');
+}
+
 
 if (file_exists(THESIS_CUSTOM . '/is_custom_pages.php')){
 	include(THESIS_CUSTOM . '/is_custom_pages.php');
