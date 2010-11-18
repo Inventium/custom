@@ -47,17 +47,29 @@ function widgetized_footer() {
 		</div>
 		
 	</div>
-
-<p class="legal">
-	Copyright &copy; 2009-2010 All Rights Reserved | 
-	<a href="http://inventiumsystems.com/">Inventium Systems</a>  | 
-	<a href ="http://website-in-a-weekend.net/disclaimer">Disclaimer</a> | 
-	<a href ="http://website-in-a-weekend.net/privacy-policy">Privacy Policy</a> | 
-	<a href ="http://website-in-a-weekend.net/terms-and-conditions">Terms & Conditions</a> | 
-Design by <a href="http://violetminded.com" title="Visit violetminded, Queen of GPO">violetminded</a>.
-</p>
 <?php
 }
 add_action('thesis_hook_footer','widgetized_footer');
+/* remove the thesis attribution */
+remove_action('thesis_hook_footer', 'thesis_attribution');
+
+function after_widgetized_footer() {
+?>
+<div class="legal">
+<div class="wiaw_footer">
+<a href="http://robertokoci.com" title="Website in a Weekend - SEO, Tips& Tricks, Wordpress">Website in a Weekend - SEO, Tips& Tricks, Wordpress</a> | Copyright © 2009-2010 All Rights Reserved
+</div>
+<div>
+	<a href="http://inventiumsystems.com/">Inventium Systems</a>  | 
+	<a href="http://website-in-a-weekend.net/disclaimer">Disclaimer</a> | 
+	<a href="http://website-in-a-weekend.net/privacy-policy">Privacy Policy</a> | 
+	<a href="http://website-in-a-weekend.net/terms-and-conditions">Terms &amp; Conditions</a> | 
+Design by <a href="http://robertokoci.com" title="Red Diamond Studio Web Design">Red Diamond Web Design</a>.
+</div>
+</div>
+<?php
+}
+remove_action('thesis_hook_after_footer','after_footer');
+add_action('thesis_hook_after_footer','after_widgetized_footer');
 
 ?>
