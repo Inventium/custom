@@ -57,7 +57,7 @@ function after_widgetized_footer() {
 ?>
 <div class="legal">
 <div class="wiaw_footer">
-<a href="http://robertokoci.com" title="Website in a Weekend - SEO, Tips& Tricks, Wordpress">Website in a Weekend - SEO, Tips& Tricks, Wordpress</a> | Copyright © 2009-2010 All Rights Reserved
+<a href="http://website-in-a-weekend.net/" title="Website in a Weekend - SEO, Tips& Tricks, Wordpress">Website in a Weekend - SEO, Tips &amp; Tricks, Wordpress</a> | Copyright &copy; 2009-2010 All Rights Reserved
 </div>
 <div>
 	<a href="http://inventiumsystems.com/">Inventium Systems</a>  | 
