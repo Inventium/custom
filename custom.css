@@ -1,422 +1,426 @@
 /*
-File:			custom.css
-Description:	Custom styles for Thesis
-
-BASIC USAGE:
-If you have enabled the custom stylesheet in the Thesis options panel, the <body> tag 
-will be appended with the "custom" class, like so: <body class="custom">. You can use 
-the "custom" class to override *any* CSS declarations contained in the style.css file.
-For example, if you wish to change the default link color to green, you would add the 
-following declarations to this file:
-
-	.custom a, .custom a:visited { color: #090; }	<--- This makes links green
-	.custom a:hover { color: #00f; }	<--- This makes links blue when you mouse over them
-
-WHY THIS WORKS:
-By using the "custom" class, you are creating more specific CSS declarations for HTML
-elements. CSS styling is applied through rules of specificity, and because declarations
-prepended with .custom are more specific, they get applied when the page is rendered!
-
-More information about styling your Thesis installation using this file can be found
-in the User's Guide:
-	http://diythemes.com/thesis/rtfm/customizing-thesis-with-customcss/
-*/
-
-
+ File:			custom.css
+ Description:	Custom styles for Thesis
+ 
+ BASIC USAGE:
+ If you have enabled the custom stylesheet in the Thesis options panel, the <body> tag
+ will be appended with the "custom" class, like so: <body class="custom">. You can use
+ the "custom" class to override *any* CSS declarations contained in the style.css file.
+ For example, if you wish to change the default link color to green, you would add the
+ following declarations to this file:
+ 
+ .custom a, .custom a:visited { color: #090; }	<--- This makes links green
+ .custom a:hover { color: #00f; }	<--- This makes links blue when you mouse over them
+ 
+ WHY THIS WORKS:
+ By using the "custom" class, you are creating more specific CSS declarations for HTML
+ elements. CSS styling is applied through rules of specificity, and because declarations
+ prepended with .custom are more specific, they get applied when the page is rendered!
+ 
+ More information about styling your Thesis installation using this file can be found
+ in the User's Guide:
+ http://diythemes.com/thesis/rtfm/customizing-thesis-with-customcss/
+ */
 /*
-@font-face{ 
-   font-family: "Museo"; 
-	src: url(http://www.violetminded.com/fonts/Museo500.otf) format("opentype"); 
-}
-*/
-
+ @font-face{
+ font-family: "Museo";
+ src: url(http://www.violetminded.com/fonts/Museo500.otf) format("opentype");
+ }
+ */
 /*
-body {
-   font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif; 
-}
-*/
-
-.custom { 
-   background:#FFFFFF url('images/wiaw-background.png') no-repeat center top;
+ body {
+ font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+ }
+ */
+.custom {
+    background: #FFFFFF url('images/wiaw-background.png') no-repeat center top;
 }
 
 .custom #container {
-	width:970px;
+    width: 970px;
 }
 
 .custom #content_box {
-	background:#FFFFFF url('images/wiaw-content-shadow-in-background.png') no-repeat left top !important;
+    background: #FFFFFF url('images/wiaw-content-shadow-in-background.png') no-repeat left top !important;
 }
 
 .hfeed {
-   margin-left: 10px;
+    margin-left: 10px;
 }
 
 .custom #content {
-	width:50.0em;
+    width: 50.0em;
 }
 
 /*
-.custom .entry-title, h1, h2, h3, h4, h5, h6 { 
-    font-family: "Museo", "Hoefler Text", Palatino, "Palatino Linotype", serif; 
+ .custom .entry-title, h1, h2, h3, h4, h5, h6 {
+ font-family: "Museo", "Hoefler Text", Palatino, "Palatino Linotype", serif;
+ }
+ */
+.custom .entry-title a {
+    color: #26013a;
 }
-*/
 
-.custom .entry-title a { 
-   color:#26013a; 
-}
-
-.custom .entry-title a:hover { 
-   color:#ff9600; 
+.custom .entry-title a:hover {
+    color: #ff9600;
 }
 
 /*
-.custom h1, h2 {
-	font-family: "Museo", "Hoefler Text", Palatino, "Palatino Linotype", serif; 
-	color:#4f0074;
-}
-*/
-
+ .custom h1, h2 {
+ font-family: "Museo", "Hoefler Text", Palatino, "Palatino Linotype", serif;
+ color:#4f0074;
+ }
+ */
 /*
-.custom h3 { 
-   font-family: "Museo", "Hoefler Text", Palatino, "Palatino Linotype", serif; 
-	color:#ff9600;
-}
-*/
-
-.custom a:link{
-	color:#26013a;
-}
-
-.custom a:visited{
-	color:#640075;
+ .custom h3 {
+ font-family: "Museo", "Hoefler Text", Palatino, "Palatino Linotype", serif;
+ color:#ff9600;
+ }
+ */
+.custom a:link {
+    color: #26013a;
 }
 
-.custom a:hover{
-	color:#e58600;
+.custom a:visited {
+    color: #640075;
 }
 
+.custom a:hover {
+    color: #e58600;
+}
 
 .custom #sidebars #sidebar_1 h3 {
-   display:block; background: url('images/sidebars-left-h3.png') no-repeat; 
-	color:#ffffff; 
-	font-size:15px; 
-	text-transform:none; 
-	font-variant:normal; 
-	padding: 4px 5px 6px 7px; 
-	margin-bottom: 5px; text-shadow: #271800 1px 1px 2px; 
-	font-weight:bold; 
-	letter-spacing:1px;
+    display: block;
+    background: url('images/sidebars-left-h3.png') no-repeat;
+    color: #ffffff;
+    font-size: 15px;
+    text-transform: none;
+    font-variant: normal;
+    padding: 4px 5px 6px 7px;
+    margin-bottom: 5px;
+    text-shadow: #271800 1px 1px 2px;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
-
 
 .custom #sidebars #sidebar_2 h3 {
-   display:block; background: url('images/sidebars-right-h3.png') no-repeat; 
-	color:#ffffff; 
-	font-size:15px; 
-	text-transform:none; 
-	font-variant:normal; 
-	padding: 4px 5px 6px 7px; 
-	margin-bottom: 5px; 
-	text-shadow: #271800 1px 1px 2px; 
-	font-weight:bold; 
-	letter-spacing:1px;
+    display: block;
+    background: url('images/sidebars-right-h3.png') no-repeat;
+    color: #ffffff;
+    font-size: 15px;
+    text-transform: none;
+    font-variant: normal;
+    padding: 4px 5px 6px 7px;
+    margin-bottom: 5px;
+    text-shadow: #271800 1px 1px 2px;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
-
-.custom #header #logo a { 
-   display: block; background: url('images/wiaw-header.png') no-repeat; 
-	outline: none; 
-	border: none; 
-	width:970px; 
-	height:140px; 
+.custom #header #logo a {
+    display: block;
+    background: url('images/wiaw-header.png') no-repeat;
+    outline: none;
+    border: none;
+    width: 970px;
+    height: 140px;
 }
-
 
 /* Solving the problem of the background within the header */
-.custom #header { 
-   padding: 0; 
-	height:140px; 
-	padding-bottom: 0px; 
-	border:none;
+.custom #header {
+    padding: 0;
+    height: 140px;
+    padding-bottom: 0px;
+    border: none;
 }
 
-
-/* This line gets rid of the site title & tagline 
+/* This line gets rid of the site title & tagline
  * by casting them out to far left field
  */
-.custom #header #logo, .custom #header #tagline { 
-   text-indent: -9999px; 
+.custom #header #logo, .custom #header #tagline {
+    text-indent: -9999px;
 }
-
 
 /* This is a bit of a kludge, but it seems to work. */
-.custom #header #tagline { 
-   height: 0; 
+.custom #header #tagline {
+    height: 0;
 }
-
 
 .custom b, strong {
-	font-weight:bolder; 
-	color:#26013a;
+    font-weight: bolder;
+    color: #26013a;
 }
 
-
-
-.custom #page { 
-   width:970px;
-	margin: 0px; 
-/* -webkit-box-shadow: 2px 2px 12px #222;
--moz-box-shadow: 2px 2px 12px #222;
-box-shadow: 2px 2px 12px #222;
--pie-box-shadow: #222 2px 2px 12px;
--ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#202020')";
-filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#202020'); */
+.custom #page {
+    width: 970px;
+    margin: 0px;
+    /*
+     -webkit-box-shadow: 2px 2px 12px #222;
+     -moz-box-shadow: 2px 2px 12px #222;
+     box-shadow: 2px 2px 12px #222;
+     -pie-box-shadow: #222 2px 2px 12px;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#202020')";
+     filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#202020');
+     */
 }
-
 
 .custom #content .post {
-	margin: 0px 5px;
-	padding-top: 10px;
+    margin: 0px 5px;
+    padding-top: 10px;
 }
 
 .custom #content.hfeed .teasers_box.top {
-	margin-right: 5px;
+    margin-right: 5px;
 }
 
-
-
 .custom ul.sidebar_list {
-
-	padding-top: 18px;
-
-	padding-left: 0px;
-
+    padding-top: 18px;
+    padding-left: 0px;
 }
 
 .custom #sidebar_1 {
-
-	width: 170px;
-
-	border: none;
-
+    width: 170px;
+    border: none;
 }
 
 .custom #sidebar_2 {
-
-	width: 271px;
-
+    width: 271px;
 }
 
 .custom #sidebar_1 .sidebar_list {
-
-	padding-right: 0px;
-
+    padding-right: 0px;
 }
-
-
 
 .custom #sidebar_2 .sidebar_list {
-
-	padding-right: 0px;
-
+    padding-right: 0px;
 }
 
-
-
-.custom #sidebar_1 .sidebar_list li.widget
-
-{
-
-	background: url('images/sidebars-left-background.png') no-repeat 0px top;
-
-	padding-top: 16px;
-
-	padding-bottom: 10px;
-
-	margin-bottom: 0px;
-
-	padding-left:10px;
-
+.custom #sidebar_1 .sidebar_list li.widget {
+    background: url('images/sidebars-left-background.png') no-repeat 0px top;
+    padding-top: 16px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    padding-left: 10px;
 }
-
-
 
 .custom #sidebar_1 .sidebar_list li.widget ul li {
-
-	line-height:16px;
-
-	margin:6px 10px 2px 8px;
-
+    line-height: 16px;
+    margin: 6px 10px 2px 8px;
 }
 
-
-
-.custom #sidebar_2 .sidebar_list li.widget
-
-{
-
-	background: url('images/sidebars-right-background.png') no-repeat right top;
-
-	padding-top: 16px;
-
-	padding-bottom: 5px;
-
-	margin-bottom: 0px;
-
-	padding-left:10px;
-
-	width: 271px;
-
+.custom #sidebar_2 .sidebar_list li.widget {
+    background: url('images/sidebars-right-background.png') no-repeat right top;
+    padding-top: 16px;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+    padding-left: 10px;
+    width: 271px;
 }
-
-
 
 .custom #sidebar_2 .sidebar_list li.widget ul li {
-
-	line-height:16px;
-
-	margin:6px 10px 2px 8px;
-
+    line-height: 16px;
+    margin: 6px 10px 2px 8px;
 }
-
-
 
 /* Custom Nav */
-
-
-
 .custom .menu {
-
-background:#666 url('images/menu-background.png') repeat-x left top; font-family: "Museo", "Hoefler Text", Palatino, "Palatino Linotype", serif; font-size:16px; border-style:none; border:none; height:46px; text-shadow: 2px 2px 3px #333;
-
-font-family: Palatino Linotype, Georgia, sans-serif;}
-
-
-
-.custom .menu a { line-height: 24px; padding:0.636em 0.95em;}
-
-
-
-.custom .menu .tab-home a { background:transparent url('images/menu-background-item.png') no-repeat left top; color:#ffffff; text-transform:lowercase; border:none; letter-spacing:-0.02em; }
-
-.custom .menu .tab-home a:hover { background:transparent url('images/menu-background-active.png') repeat-x left top; color:#ffffff; text-transform:lowercase; border:none; letter-spacing:-0.02em; }
-
-
-
-.custom .menu .tab-1 a { background:transparent url('images/menu-background-item.png') no-repeat left top; color:#ffffff; text-transform:lowercase; border:none; letter-spacing:-0.02em; }
-
-.custom .menu .tab-1 a:hover { background:transparent url('images/menu-background-active.png') repeat-x left top; color:#ffffff; text-transform:lowercase; border:none; letter-spacing:-0.02em; }
-
-
-
-.custom .menu .tab-2 a { background:transparent url('images/menu-background-item.png') no-repeat left top; color:#ffffff; text-transform:lowercase; border:none; letter-spacing:-0.02em; }
-
-.custom .menu .tab-2 a:hover { background:transparent url('images/menu-background-active.png') repeat-x left top; color:#ffffff; text-transform:lowercase; border:none; letter-spacing:-0.02em; }
-
-
-
-.custom .menu .tab-3 a { background:transparent url('images/menu-background-item.png') no-repeat left top; color:#ffffff; text-transform:lowercase; border:none; letter-spacing:-0.02em; }
-
-.custom .menu .tab-3 a:hover { background:transparent url('images/menu-background-active.png') repeat-x left top; color:#ffffff; text-transform:lowercase; border:none; letter-spacing:-0.02em; }
-
-
-
-.custom .menu .tab-4 a { background:transparent url('images/menu-background-item.png') no-repeat left top; color:#ffffff; text-transform:lowercase; border:none; letter-spacing:-0.02em; }
-
-.custom .menu .tab-4 a:hover { background:transparent url('images/menu-background-active.png') repeat-x left top; color:#ffffff; text-transform:lowercase; border:none; letter-spacing:-0.02em; }
-
-
-
-.custom .menu .tab-5 a { background:transparent url('images/menu-background-item.png') no-repeat left top; color:#ffffff; text-transform:lowercase; border:none; letter-spacing:-0.02em; }
-
-.custom .menu .tab-5 a:hover { background:transparent url('images/menu-background-active.png') repeat-x left top; color:#ffffff; text-transform:lowercase; border:none; letter-spacing:-0.02em; }
-
-
-
-.custom .menu .tab-6 a { background:transparent url('images/menu-background-item.png') no-repeat left top; color:#ffffff; text-transform:lowercase; border:none; letter-spacing:-0.02em; }
-
-.custom .menu .tab-6 a:hover { background:transparent url('images/menu-background-active.png') repeat-x left top; color:#ffffff; text-transform:lowercase; border:none; letter-spacing:-0.02em; }
-
-
-
-.custom .menu li { background:transparent url('images/menu-background-item.png') no-repeat left top; margin-bottom: 0; height:46px; }
-
-
-
-.custom .menu li a { background:transparent url('images/menu-background-item.png') no-repeat left top; color:#ffffff; text-transform:lowercase; border:none; letter-spacing:-0.02em; }
-
-.custom .menu li a:hover { background:#ff9600; color:#ffffff; text-transform:lowercase; border:none; letter-spacing:-0.02em; text-decoration:none; }
-
-
-
-.custom .menu .rss a { background:transparent url('images/menu-background-item.png') no-repeat left top; color:#ffffff; text-transform:lowercase; border:none; letter-spacing:-0.02em; }
-
-.custom .menu .rss a:hover { background:transparent url('images/menu-background-active.png') repeat-x left top; color:#ffffff; text-transform:lowercase; border:none; letter-spacing:-0.02em; text-decoration:none; padding:0.636em 0.95em;}
-
-
-
-.custom .menu ul ul, .menu :hover ul :hover ul
-
-{
-
-	left: 156px;
-
+    background: #666 url('images/menu-background.png') repeat-x left top;
+    font-family: "Museo", "Hoefler Text", Palatino, "Palatino Linotype", serif;
+    font-size: 16px;
+    border-style: none;
+    border: none;
+    height: 46px;
+    text-shadow: 2px 2px 3px #333;
+    font-family: Palatino Linotype, Georgia, sans-serif;
 }
 
-.custom .menu .submenu-1 li /* li ul, .menu li ul li, .menu li ul li a*/
-
-{
-
-	height: 39px !important;
-
-	line-height: 24px;
-
-	width: 156px;
-
+.custom .menu a {
+    line-height: 24px;
+    padding: 0.636em 0.95em;
 }
 
-.custom .menu .submenu-1 li a
-
-{
-
-	padding:8px 8px 8px 10px;
-
-	height: 24px !important;
-
-	line-height: 24px;
-
-	width: 138px;
-
-	font-size: 16px;
-
-	background:transparent url('images/menu-drop-down-inactive.png') no-repeat left top;
-
-	filter:alpha(opacity=93);
-
-	opacity:0.93;
-
+.custom .menu .tab-home a {
+    background: transparent url('images/menu-background-item.png') no-repeat left top;
+    color: #ffffff;
+    text-transform: lowercase;
+    border: none;
+    letter-spacing: -0.02em;
 }
 
+.custom .menu .tab-home a:hover {
+    background: transparent url('images/menu-background-active.png') repeat-x left top;
+    color: #ffffff;
+    text-transform: lowercase;
+    border: none;
+    letter-spacing: -0.02em;
+}
 
+.custom .menu .tab-1 a {
+    background: transparent url('images/menu-background-item.png') no-repeat left top;
+    color: #ffffff;
+    text-transform: lowercase;
+    border: none;
+    letter-spacing: -0.02em;
+}
 
-.custom .menu .submenu-1, .menu .submenu-2
+.custom .menu .tab-1 a:hover {
+    background: transparent url('images/menu-background-active.png') repeat-x left top;
+    color: #ffffff;
+    text-transform: lowercase;
+    border: none;
+    letter-spacing: -0.02em;
+}
 
-{
+.custom .menu .tab-2 a {
+    background: transparent url('images/menu-background-item.png') no-repeat left top;
+    color: #ffffff;
+    text-transform: lowercase;
+    border: none;
+    letter-spacing: -0.02em;
+}
 
-width: 156px;
+.custom .menu .tab-2 a:hover {
+    background: transparent url('images/menu-background-active.png') repeat-x left top;
+    color: #ffffff;
+    text-transform: lowercase;
+    border: none;
+    letter-spacing: -0.02em;
+}
 
--webkit-box-shadow: 2px 2px 12px #222;
+.custom .menu .tab-3 a {
+    background: transparent url('images/menu-background-item.png') no-repeat left top;
+    color: #ffffff;
+    text-transform: lowercase;
+    border: none;
+    letter-spacing: -0.02em;
+}
 
--moz-box-shadow: 2px 2px 12px #222;
+.custom .menu .tab-3 a:hover {
+    background: transparent url('images/menu-background-active.png') repeat-x left top;
+    color: #ffffff;
+    text-transform: lowercase;
+    border: none;
+    letter-spacing: -0.02em;
+}
 
-box-shadow: 2px 2px 12px #222;
+.custom .menu .tab-4 a {
+    background: transparent url('images/menu-background-item.png') no-repeat left top;
+    color: #ffffff;
+    text-transform: lowercase;
+    border: none;
+    letter-spacing: -0.02em;
+}
 
--pie-box-shadow: #222 2px 2px 12px;
+.custom .menu .tab-4 a:hover {
+    background: transparent url('images/menu-background-active.png') repeat-x left top;
+    color: #ffffff;
+    text-transform: lowercase;
+    border: none;
+    letter-spacing: -0.02em;
+}
 
--ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#202020')";
+.custom .menu .tab-5 a {
+    background: transparent url('images/menu-background-item.png') no-repeat left top;
+    color: #ffffff;
+    text-transform: lowercase;
+    border: none;
+    letter-spacing: -0.02em;
+}
 
-filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#202020'); 
+.custom .menu .tab-5 a:hover {
+    background: transparent url('images/menu-background-active.png') repeat-x left top;
+    color: #ffffff;
+    text-transform: lowercase;
+    border: none;
+    letter-spacing: -0.02em;
+}
+
+.custom .menu .tab-6 a {
+    background: transparent url('images/menu-background-item.png') no-repeat left top;
+    color: #ffffff;
+    text-transform: lowercase;
+    border: none;
+    letter-spacing: -0.02em;
+}
+
+.custom .menu .tab-6 a:hover {
+    background: transparent url('images/menu-background-active.png') repeat-x left top;
+    color: #ffffff;
+    text-transform: lowercase;
+    border: none;
+    letter-spacing: -0.02em;
+}
+
+.custom .menu li {
+    background: transparent url('images/menu-background-item.png') no-repeat left top;
+    margin-bottom: 0;
+    height: 46px;
+}
+
+.custom .menu li a {
+    background: transparent url('images/menu-background-item.png') no-repeat left top;
+    color: #ffffff;
+    text-transform: lowercase;
+    border: none;
+    letter-spacing: -0.02em;
+}
+
+.custom .menu li a:hover {
+    background: #ff9600;
+    color: #ffffff;
+    text-transform: lowercase;
+    border: none;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+}
+
+.custom .menu .rss a {
+    background: transparent url('images/menu-background-item.png') no-repeat left top;
+    color: #ffffff;
+    text-transform: lowercase;
+    border: none;
+    letter-spacing: -0.02em;
+}
+
+.custom .menu .rss a:hover {
+    background: transparent url('images/menu-background-active.png') repeat-x left top;
+    color: #ffffff;
+    text-transform: lowercase;
+    border: none;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    padding: 0.636em 0.95em;
+}
+
+.custom .menu ul ul, .menu :hover ul :hover ul {
+    left: 156px;
+}
+
+.custom .menu .submenu-1 li /* li ul, .menu li ul li, .menu li ul li a*/ {
+    height: 39px !important;
+    line-height: 24px;
+    width: 156px;
+}
+
+.custom .menu .submenu-1 li a {
+    padding: 8px 8px 8px 10px;
+    height: 24px !important;
+    line-height: 24px;
+    width: 138px;
+    font-size: 16px;
+    background: transparent url('images/menu-drop-down-inactive.png') no-repeat left top;
+    filter: alpha(opacity = 93);
+    opacity: 0.93;
+}
+
+.custom .menu .submenu-1, .menu .submenu-2 {
+    width: 156px;
+    -webkit-box-shadow: 2px 2px 12px #222;
+    -moz-box-shadow: 2px 2px 12px #222;
+    box-shadow: 2px 2px 12px #222;
+    -pie-box-shadow: #222 2px 2px 12px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#202020')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#202020'); 
 
 }
 
@@ -425,177 +429,105 @@ filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Colo
 .custom .menu .submenu-1 a {
 
 
-
 /*background:#999; background-image:none;*/
 
 color:#ffffff; text-transform:lowercase; border:none; letter-spacing:-0.02em; }
 
 
-
 .custom .menu .submenu-1 a:hover { 
+   background:transparent url('images/menu-drop-down-active.png') no-repeat left top; 
+	color:#ffffff; 
+	text-transform:lowercase; 
+	border:none; 
+	letter-spacing:-0.02em; 
+	text-decoration:none; 
+}
 
 
-
-background:transparent url('images/menu-drop-down-active.png') no-repeat left top; color:#ffffff; text-transform:lowercase; border:none; letter-spacing:-0.02em; text-decoration:none; }
-
-
-
-/* Custom Content, Baby */
+.custom #content_box { 
+   background:#ffffff; 
+}
 
 
-
-.custom #content_box { background:#ffffff; }
-
-
-
-/* Sexy Sidebar */ 
-
-
-
-.custom #sidebars { /*background:#ffffff;*/ width: 451px;}
-
+.custom #sidebars { 
+   /*background:#ffffff;*/ 
+	width: 451px;
+}
 
 
 .custom #sidebar_1 ul.sidebar_list {
-
 	border: none;
-
 	padding-right: 0px;
-
 }
-
 
 
 .custom #sidebar_2 ul.sidebar_list {
-
 	border: none;
-
 	padding-right: 0px;
-
 }
 
 
-
-/* This footer is a floozy-bot */
-
-
-
 .custom #footer { 
-
 	/*background:#fbe8c5;*/
-
 	background:#7dad6c url('images/footer-head.png') no-repeat left top;
-
 	border:none;
-
 	color:#ffffff; 
-
 	text-align:center; 
-
 	/*border: 6px solid #007214;*/
-
 	/*margin: 10px 0px 10px 0px;*/
-
 	padding-left:9px;
-
 	padding-right:9px;
-
 	padding-bottom: 0px;
-
 }
 
 
 
 .custom #footer a {
-
 	/* color:#ff9600; */
-
 }
 
 
 
 .custom #article_links .bookbox {
-
 	width: 450px;
-
 	overflow: hidden;
-
 	margin: 0;
-
 	margin-left: auto;
-
 	margin-right: auto;
-
 	margin-top: 10px;
-
 	float: none;
-
 	text-align: center;
-
 	padding: 5px;
-
 	border: solid 1px #DDDDDD;
-
 	background-color: #FFFFCC;
-
 } 
-
-
-
- 
 
 .custom #article_links .bookbox img.cover {
-
 	float: left;
-
 } 
 
-
-
 .custom span.booktitle {
-
   color: red; 
-
 }
-
 
 
 .custom div.bookblurb {
-
 	margin-left: 1em;
-
 	margin-right: 1em;
-
 }
 
-
-
-
-
 .custom .notebox {
-
-	width: 250px;
-
-	overflow: hidden;
-
-	margin: 0;
-
-	margin-left: auto;
-
-	margin-right: auto;
-
-	margin-top: 10px;
-
-	float: right;
-
-	text-align: center;
-
-	padding: 5px;
-
-	border: solid 1px #DDDDDD;
-
-	background-color: #FFFFCC;
-
+    width: 250px;
+    overflow: hidden;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    float: right;
+    text-align: center;
+    padding: 5px;
+    border: solid 1px #DDDDDD;
+    background-color: #FFFFCC;
 }
 
 
@@ -603,249 +535,126 @@ background:transparent url('images/menu-drop-down-active.png') no-repeat left to
 
 
 /* Block spacing resets */
-
 .custom p {
-
-  margin-bottom: .5em; 
-
+    margin-bottom: .5em;
 }
 
 .custom p + p {
-
-  text-indent: 1.0em;
-
-  margin-top: .5em; 
-
+    text-indent: 1.0em;
+    margin-top: .5em;
 }
-
-
 
 .custom ol + p {
-
-  text-indent: 0em;
-
-  margin-top: .5em; 
-
+    text-indent: 0em;
+    margin-top: .5em;
 }
-
-
 
 /* Dangerous stuff. */
-
 .custom div + p {
-
-  text-indent: 1.5em;
-
-  margin-top: .5em; 
-
+    text-indent: 1.5em;
+    margin-top: .5em;
 }
-
-
-
-
 
 
 
 /* Small, medium, large thematic break. */
+p.stb {
+    text-indent: 0;
+    margin-top: 0.83em;
+}
 
-p.stb { text-indent: 0; margin-top: 0.83em; }
+p.mtb {
+    text-indent: 0;
+    margin-top: 2.17em;
+}
 
-p.mtb { text-indent: 0; margin-top: 2.17em; }
-
-p.ltb { text-indent: 0; margin-top: 3.08em; }
-
-
-
-
+p.ltb {
+    text-indent: 0;
+    margin-top: 3.08em;
+}
 
 .custom pre {
-
-	font-size: 11px;
-
-	background: none;
-
-	border: none;
-
+    font-size: 11px;
+    background: none;
+    border: none;
 }
-
-
-
-
 
 .custom ol {
-
-  padding-left: 1em;
-
+    padding-left: 1em;
 }
-
-
 
 .custom dl {
-
-  padding-left: 1em;
-
+    padding-left: 1em;
 }
-
-
 
 .custom dd {
-
-  padding-left: 2em;
-
+    padding-left: 2em;
 }
-
-
-
-
 
 .custom input.submit {
-
-   font-family: arial;
-
-   font-size: 14pt;
-
-   color: #FFFFFF;
-
-   background: #ffa20f;
-
-   border: 2px outset #d7b9c9
-
+    font-family: arial;
+    font-size: 14pt;
+    color: #FFFFFF;
+    background: #ffa20f;
+    border: 2px outset #d7b9c9
 }
-
-
 
 .custom input.coupon {
-
-   font-family: arial;
-
-   font-size: 14pt;
-
-   color: #FFFFFF;
-
-   background: #01622E;
-
-   border: 2px outset #d7b9c9
-
+    font-family: arial;
+    font-size: 14pt;
+    color: #FFFFFF;
+    background: #01622E;
+    border: 2px outset #d7b9c9
 }
-
-
 
 .custom p.estread {
-
-   padding-bottom: 1em;
-
-   font-size: 65%;
-
-   font-weight: bold;
-
+    padding-bottom: 1em;
+    font-size: 65%;
+    font-weight: bold;
 }
-
-
 
 .custom p.estread + p {
-
-  text-indent: 0em;
-
-  margin-top: 0; 
-
+    text-indent: 0em;
+    margin-top: 0;
 }
-
-
-
-
-
-
 
 .custom div.bio {
-
-
-
-	border-width: 1px; 
-
-	border-style: solid; 
-
+    border-width: 1px;
+    border-style: solid;
     font-size: 85%;
-
-	/* border-color: #002DFF; */
-
+    /* border-color: #002DFF; */
     /* background-color: #5DCA8F; */
-
-	margin-left: 1em; 
-
-	margin-right: 1em;
-
-	margin-bottom: 1em;
-
-	margin-top: 1em;
-
-	padding-left: 1em;
-
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    padding-left: 1em;
 }
-
-
-
-
 
 /* ----- From here to next line, maybe delete --- */
-
-.custom .format_text input,
-
-.custom .sidebar .text_input {
-
- width:auto;
-
+.custom .format_text input, .custom .sidebar .text_input {
+    width: auto;
 }
 
-
-
-
-
-
-
-.custom a:link .internal{ 
-
-   color:#dd0000;
-
+.custom a:link .internal {
+    color: #dd0000;
 }
 
-
-
-
-
-.custom .format_text input, 
-
-.custom #commentform input, #commentform textarea {
-
-width:auto;
-
+.custom .format_text input, .custom #commentform input, #commentform textarea {
+    width: auto;
 }
-
-
 
 .custom .format_text input.madlibtext {
-
-width:auto;
-
+    width: auto;
 }
 
-
-
 .custom .format_text .text_input {
-
- width:auto;
-
+    width: auto;
 }
 
 /* ----- From here to next line, maybe delete --- */
-
-
-
-
-
 .notweetmeme #page div.tweetmeme_button {
-
-	display: none;
-
+    display: none;
 }
 
 
@@ -853,335 +662,174 @@ width:auto;
 
 
 /*---------------------------------*/
-
 /* WIDGETIZED FOOTER               */
-
 /* Mike Nichols - October 17, 2009 */
-
 /*---------------------------------*/
-
 /* More info here: */
-
 /* http://thesisthemetools.com/tutorial-widgetized-fat-footer/ */
-
 /* footer widget area setup */
-
 #footer_setup {
-
-	/* widgetized footer background (not footer background) */
-
-	background:#fbe8c5 url('images/footer-head.png') no-repeat -9px -11px;
-
-	/* widget padding */
-
-	padding: 16px 16px 16px 16px;
-
-	/* margin at bottom of widgets */
-
-	margin-bottom: 0px;
-
-	/* do not change this! */
-
-	overflow: hidden;
-
+    /* widgetized footer background (not footer background) */
+    background: #fbe8c5 url('images/footer-head.png') no-repeat -9px -11px;
+    /* widget padding */
+    padding: 16px 16px 16px 16px;
+    /* margin at bottom of widgets */
+    margin-bottom: 0px;
+    /* do not change this! */
+    overflow: hidden;
 }
-
-
 
 /* widget item setup */
-
 #footer_setup .footer_items {
-
-	/* contents alignment */
-
-	text-align: left;
-
-	/* widget width */
-
-	width: 210px;
-
-	/* space between widgets */
-
-	padding-right: 20px;
-
-	/* text color */
-
-	color: #956000; /*#2361A1;*/
-
-	/* do not change these! */
-
-	display: inline-block;
-
-	float: left;
-
-	height: 100%;
-
-	/*margin: 7px 10px 0px 0px*/
-
-	font-size: 11px;
-
-	/*line-height: 16px;*/
-
-
-
+    /* contents alignment */
+    text-align: left;
+    /* widget width */
+    width: 210px;
+    /* space between widgets */
+    padding-right: 20px;
+    /* text color */
+    color: #956000; /*#2361A1;*/
+    /* do not change these! */
+    display: inline-block;
+    float: left;
+    height: 100%;
+    /*margin: 7px 10px 0px 0px*/
+    font-size: 11px;
+    /*line-height: 16px;*/
 }
-
-
 
 #footer_setup .footer_items a {
-
-color: #007214;
-
+    color: #007214;
 }
-
-
 
 #footer_setup .footer_items a:hover {
-
-color: #000000;
-
+    color: #000000;
 }
-
-
 
 /* widget item headers*/
-
 #footer_setup .footer_items h3 {
-
-	/* font size */
-
-	font-size: 15px;
-
-	/* bold or not */
-
-	font-weight: bold;
-
-	/* uppercase or not */
-
-	text-transform: uppercase;
-
-	/* space out the letters*/
-
-	letter-spacing: 0px;
-
-	/* font color*/
-
-	color: #ffffff;
-
-	/* padding under header text */
-
-	padding: 2px 0px 2px 5px;
-
-	/* border under header text */
-
-	/* border-bottom: 3px solid #ffdf00; */
-
-	/* distance between border and widget text */
-
-	margin: 7px 0 2px;
-
-	background:#007214 url('images/footer-h3.png') no-repeat right top;
-
-	text-shadow: 2px 2px 3px #002406;
-
-	/*line-height:21px;*/
-
+    /* font size */
+    font-size: 15px;
+    /* bold or not */
+    font-weight: bold;
+    /* uppercase or not */
+    text-transform: uppercase;
+    /* space out the letters*/
+    letter-spacing: 0px;
+    /* font color*/
+    color: #ffffff;
+    /* padding under header text */
+    padding: 2px 0px 2px 5px;
+    /* border under header text */
+    /* border-bottom: 3px solid #ffdf00; */
+    /* distance between border and widget text */
+    margin: 7px 0 2px;
+    background: #007214 url('images/footer-h3.png') no-repeat right top;
+    text-shadow: 2px 2px 3px #002406;
+    /*line-height:21px;*/
 }
-
-
 
 /* do not change these! */
+#footer_setup .footer_items ul li {
+    list-style: none;
+}
 
-#footer_setup .footer_items ul li { list-style: none; }
-
-#footer_setup .footer_items ul { margin: 0px; padding: 0px; }
-
-
+#footer_setup .footer_items ul {
+    margin: 0px;
+    padding: 0px;
+}
 
 .custom div.legal {
-
-	background:#00430c url('images/footer-legal.png') no-repeat left top;
-
-	color:#ffffff;
-
-	margin:0px 0px 10px 0px;
-
-/*	padding-bottom:46px;*/
-
-	padding-top:24px;
-
-	text-align:center;
-
-	font-size:10px;
-
-	font-family: Palatino Linotype, Georgia, sans-serif;
-
-	height: 57px;
-
+    background: #00430c url('images/footer-legal.png') no-repeat left top;
+    color: #ffffff;
+    margin: 0px 0px 10px 0px;
+    /*	padding-bottom:46px;*/
+    padding-top: 24px;
+    text-align: center;
+    font-size: 10px;
+    font-family: Palatino Linotype, Georgia, sans-serif;
+    height: 57px;
 }
-
-
 
 .custom div.wiaw_footer {
-
-	font-size:12px;
-
+    font-size: 12px;
 }
 
-
-
 .custom div.legal a {
-
-	color:#d492e0;
-
+    color: #d492e0;
 }
 
 .custom div.legal a:hover {
-
-	color:#ed9800;
-
+    color: #ed9800;
 }
-
-
 
 .custom p.violetminded {
-
-	background: #356101;	
-
-	color:#ff9600;
-
+    background: #356101;
+    color: #ff9600;
 }
-
-
-
-
 
 /* Feature box */
-
 .custom #feature_box {
-
     overflow: auto;
-
     background-color: #fff;
-
     margin-top: 18px;
-
     padding: 10px;
-
     border: solid;
-
     border-width: 1px;
-
     border-color: #000;
-
-    height:auto;
-
-    min-height:100%;
-
+    height: auto;
+    min-height: 100%;
 }
-
-
 
 .custom #feature_box * + p {
-
     text-indent: 0em;
-
 }
-
-
 
 .custom #feature_box h2 {
-
-    padding-bottom: 1em;    
-
+    padding-bottom: 1em;
 }
-
-    
 
 .custom #feature_box h2 a {
-
     text-indent: 0em;
-
     text-decoration: underline;
-
-/*    color: #E9BA3D; */
-
+    /*    color: #E9BA3D; */
 }
-
-
 
 .custom #feature_box div.featuredpost {
-
     text-align: center;
-
     width: 29%;
-
     float: left;
-
 }
-
-
 
 .custom #feature_box div.featuredheadline {
-
     width: 69%;
-
     float: right;
-
     display: inline;
-
 }
-
-
 
 .fan_box .full_widget {
-
-	border: solid 1px #85019c;
-
+    border: solid 1px #85019c;
 }
-
-
 
 .fan_box .connect_action .name_block a {
-
-	color: #85019c;
-
+    color: #85019c;
 }
-
-
 
 .fan_box .connect_action .name_block a:hover {
-
-	color: #956000;
-
+    color: #956000;
 }
-
-
 
 .fan_box .full_widget .connect_top {
-
-	background: #f6c772 !important;
-
+    background: #f6c772 !important;
 }
-
-
 
 .fan_box .connections {
-
-	border-top: solid 1px #d7a9df;
-
+    border-top: solid 1px #d7a9df;
 }
 
-
-
 .grid_item {
-
-	float:left;
-
-	overflow:hidden;
-
-	padding:0 12px 8px 0 !important;
-
-	width:50px;
-
+    float: left;
+    overflow: hidden;
+    padding: 0 12px 8px 0 !important;
+    width: 50px;
 }
