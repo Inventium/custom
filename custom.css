@@ -1,223 +1,187 @@
 /*
-
 File:			custom.css
-
 Description:	Custom styles for Thesis
 
-
-
 BASIC USAGE:
-
-
-
 If you have enabled the custom stylesheet in the Thesis options panel, the <body> tag 
-
 will be appended with the "custom" class, like so: <body class="custom">. You can use 
-
 the "custom" class to override *any* CSS declarations contained in the style.css file.
-
-
-
 For example, if you wish to change the default link color to green, you would add the 
-
 following declarations to this file:
 
-
-
 	.custom a, .custom a:visited { color: #090; }	<--- This makes links green
-
 	.custom a:hover { color: #00f; }	<--- This makes links blue when you mouse over them
 
-
-
 WHY THIS WORKS:
-
-
-
 By using the "custom" class, you are creating more specific CSS declarations for HTML
-
 elements. CSS styling is applied through rules of specificity, and because declarations
-
 prepended with .custom are more specific, they get applied when the page is rendered!
 
-
-
 More information about styling your Thesis installation using this file can be found
-
 in the User's Guide:
-
 	http://diythemes.com/thesis/rtfm/customizing-thesis-with-customcss/
-
 */
 
 
+/*
+@font-face{ 
+   font-family: "Museo"; 
+	src: url(http://www.violetminded.com/fonts/Museo500.otf) format("opentype"); 
+}
+*/
 
-@font-face{ font-family: "Museo"; src: url(http://www.violetminded.com/fonts/Museo500.otf) format("opentype"); }
+/*
+body {
+   font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif; 
+}
+*/
 
+.custom { 
+   background:#FFFFFF url('images/wiaw-background.png') no-repeat center top;
+}
 
+.custom #container {
+	width:970px;
+}
 
-body{
+.custom #content_box {
+	background:#FFFFFF url('images/wiaw-content-shadow-in-background.png') no-repeat left top !important;
+}
 
-font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif; }
-
-
-
-.custom {background:#FFFFFF url('images/wiaw-background.png') no-repeat center top;}
-
-
-
-.custom #container {width:970px;}
-
-
-
-.custom #content_box {background:#FFFFFF url('images/wiaw-content-shadow-in-background.png') no-repeat left top !important;}
-
-
-.hfeed
-{
-margin-left: 10px;
+.hfeed {
+   margin-left: 10px;
 }
 
 .custom #content {
 	width:50.0em;
 }
 
+/*
 .custom .entry-title, h1, h2, h3, h4, h5, h6 { 
-
     font-family: "Museo", "Hoefler Text", Palatino, "Palatino Linotype", serif; 
+}
+*/
 
+.custom .entry-title a { 
+   color:#26013a; 
 }
 
+.custom .entry-title a:hover { 
+   color:#ff9600; 
+}
 
+/*
+.custom h1, h2 {
+	font-family: "Museo", "Hoefler Text", Palatino, "Palatino Linotype", serif; 
+	color:#4f0074;
+}
+*/
 
-.custom .entry-title a { color:#4f0074; }
-
-.custom .entry-title a:hover { color:#ff9600; }
-
-
-
-.custom h1, h2 {font-family: "Museo", "Hoefler Text", Palatino, "Palatino Linotype", serif; color:#4f0074;}
-
-
-
-.custom h3 { font-family: "Museo", "Hoefler Text", Palatino, "Palatino Linotype", serif; color:#ff9600;}
-
-
+/*
+.custom h3 { 
+   font-family: "Museo", "Hoefler Text", Palatino, "Palatino Linotype", serif; 
+	color:#ff9600;
+}
+*/
 
 .custom a:link{
-
-	color:#4f0074;
-
+	color:#26013a;
 }
-
-
 
 .custom a:visited{
-
 	color:#640075;
-
 }
-
-
 
 .custom a:hover{
-
 	color:#e58600;
-
 }
-
 
 
 .custom #sidebars #sidebar_1 h3 {
-
-display:block; background: url('images/sidebars-left-h3.png') no-repeat; color:#ffffff; font-size:15px; text-transform:none; font-variant:normal; padding: 4px 5px 6px 7px; margin-bottom: 5px; text-shadow: #271800 1px 1px 2px; font-weight:bold; letter-spacing:1px;
-
+   display:block; background: url('images/sidebars-left-h3.png') no-repeat; 
+	color:#ffffff; 
+	font-size:15px; 
+	text-transform:none; 
+	font-variant:normal; 
+	padding: 4px 5px 6px 7px; 
+	margin-bottom: 5px; text-shadow: #271800 1px 1px 2px; 
+	font-weight:bold; 
+	letter-spacing:1px;
 }
-
 
 
 .custom #sidebars #sidebar_2 h3 {
-
-display:block; background: url('images/sidebars-right-h3.png') no-repeat; color:#ffffff; font-size:15px; text-transform:none; font-variant:normal; padding: 4px 5px 6px 7px; margin-bottom: 5px; text-shadow: #271800 1px 1px 2px; font-weight:bold; letter-spacing:1px;
-
+   display:block; background: url('images/sidebars-right-h3.png') no-repeat; 
+	color:#ffffff; 
+	font-size:15px; 
+	text-transform:none; 
+	font-variant:normal; 
+	padding: 4px 5px 6px 7px; 
+	margin-bottom: 5px; 
+	text-shadow: #271800 1px 1px 2px; 
+	font-weight:bold; 
+	letter-spacing:1px;
 }
 
 
-
-
-
-/* Bitchin' banner */
-
-.custom #header #logo a { display: block; background: url('images/wiaw-header.png') no-repeat; outline: none; border: none; width:970px; height:140px; }
-
+.custom #header #logo a { 
+   display: block; background: url('images/wiaw-header.png') no-repeat; 
+	outline: none; 
+	border: none; 
+	width:970px; 
+	height:140px; 
+}
 
 
 /* Solving the problem of the background within the header */
+.custom #header { 
+   padding: 0; 
+	height:140px; 
+	padding-bottom: 0px; 
+	border:none;
+}
 
 
-
-.custom #header { padding: 0; height:140px; padding-bottom: 0px; border:none;}
-
-
-
-/* This line gets rid of the site title & tagline by casting them out to far left field */
-
-.custom #header #logo, .custom #header #tagline { text-indent: -9999px; }
-
-
-
-/* This line collapses the vertical space of the tagline so that there isn't unnecessary white space after the header image */
-
+/* This line gets rid of the site title & tagline 
+ * by casting them out to far left field
+ */
+.custom #header #logo, .custom #header #tagline { 
+   text-indent: -9999px; 
+}
 
 
 /* This is a bit of a kludge, but it seems to work. */
+.custom #header #tagline { 
+   height: 0; 
+}
 
-.custom #header #tagline { height: 0; }
 
-
-
-.custom b, strong {font-weight:bolder; color:#00570f;}
+.custom b, strong {
+	font-weight:bolder; 
+	color:#26013a;
+}
 
 
 
 .custom #page { 
-
-    width:970px;
-
+   width:970px;
 	margin: 0px; 
-
 /* -webkit-box-shadow: 2px 2px 12px #222;
-
 -moz-box-shadow: 2px 2px 12px #222;
-
 box-shadow: 2px 2px 12px #222;
-
 -pie-box-shadow: #222 2px 2px 12px;
-
 -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#202020')";
-
 filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#202020'); */
-
-
-
 }
-
 
 
 .custom #content .post {
-
 	margin: 0px 5px;
-
 	padding-top: 10px;
-
 }
 
-
-
 .custom #content.hfeed .teasers_box.top {
-
 	margin-right: 5px;
-
 }
 
 
