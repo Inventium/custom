@@ -427,11 +427,12 @@
 
 
 .custom .menu .submenu-1 a {
-
-
 /*background:#999; background-image:none;*/
-
-color:#ffffff; text-transform:lowercase; border:none; letter-spacing:-0.02em; }
+    color:#ffffff; 
+    text-transform:lowercase; 
+    border:none; 
+    letter-spacing:-0.02em; 
+}
 
 
 .custom .menu .submenu-1 a:hover { 
