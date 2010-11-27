@@ -14,11 +14,11 @@ if (file_exists(THESIS_CUSTOM . '/wiaw_fat_footer.php')){
 	include(THESIS_CUSTOM . '/wiaw_fat_footer.php');
 }
 
-/*
+//*
 if (file_exists(THESIS_CUSTOM . '/wiaw_featured_new.php')){
 	include(THESIS_CUSTOM . '/wiaw_featured_new.php');
 }
-*/
+//*/
 
 if (file_exists(THESIS_CUSTOM . '/wiaw_before_content.php')){ /* before content breadcrumbs*/
 	include(THESIS_CUSTOM . '/wiaw_before_content.php');
