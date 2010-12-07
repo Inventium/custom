@@ -81,8 +81,9 @@
     color: #26013a;
 }
 
+/* FIx this. */
 .custom a:visited {
-    color: #640075;
+    color: #26013a;
 }
 
 .custom a:hover {

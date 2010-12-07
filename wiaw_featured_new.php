@@ -14,9 +14,11 @@ function my_before_content_box () {
 
 	<?php if ( function_exists( 'get_smooth_slider_cat' ) ) {
 
-		 get_smooth_slider(); } ?>	</td>
+		 get_smooth_slider(); } ?>	
+		 </td>
 
-    <td width="403px" valign="top" style="padding: 5px 10px 0px 10px; background:url('/wp-content/themes/thesis_18/custom/images/wiaw-banner-you-are-new.gif')">
+    <td width="403px" valign="top" style="padding: 5px 10px 0px 10px; 
+    background:url('wp-content/themes/thesis_18/custom/images/wiaw-banner-you-are-new.gif')">
 	</td>
   </tr>
 </table>
