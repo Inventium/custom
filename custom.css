@@ -22,16 +22,17 @@
  http://diythemes.com/thesis/rtfm/customizing-thesis-with-customcss/
  */
 /*
- @font-face{
- font-family: "Museo";
- src: url(http://www.violetminded.com/fonts/Museo500.otf) format("opentype");
- }
- */
-/*
  body {
  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
  }
  */
+ 
+ 
+body {
+   font-family: "minion-pro-2", "minion-pro-2", "Georgia", serif;
+ }
+
+ 
 .custom {
     background: #FFFFFF url('images/wiaw-background.png') no-repeat center top;
 }
@@ -52,11 +53,34 @@
     width: 50.0em;
 }
 
+
+
+/*---:[ headlines ]:---*/
+.custom .headline_area h1, .headline_area h2, #archive_intro h1 { font-size: 2.5em; line-height: 1.364em; }
+.custom .format_text h2 { font-size: 1.4em; line-height: 1.222em; margin: 1.833em 0 0.611em 0; }
+.custom .format_text h3 { font-size: 1.14em; line-height: 1.222em; margin: 1.833em 0 0.611em 0; }
+.custom .format_text h4 { font-size: 1em; }
+.custom .format_text h5 { font-size: 0.786em; }
+.custom .format_text h6 { font-size: 0.786em; }
+.custom .teaser h2 { }
+.custom .sidebar h3 { font-size: 1em; line-height: 1.385em; margin-bottom: 0.692em; }
+.custom #archive_intro h1 { margin-bottom: 1em; }
+
+.custom h1, h2, h3, h4, h5, h6 {
+   font-family: "myriad-pro-1", "myriad-pro-2", sans-serif; 
+   color: #26013a;
+}
+
 /*
- .custom .entry-title, h1, h2, h3, h4, h5, h6 {
- font-family: "Museo", "Hoefler Text", Palatino, "Palatino Linotype", serif;
- }
- */
+.custom .headline_area h1, h2, h3, h4, h5, h6 {
+   color: #37056a; 
+}
+*/
+
+.custom h3 {
+  font-style: italic;
+}
+
 .custom .entry-title a {
     color: #26013a;
 }
@@ -65,23 +89,12 @@
     color: #ff9600;
 }
 
-/*
- .custom h1, h2 {
- font-family: "Museo", "Hoefler Text", Palatino, "Palatino Linotype", serif;
- color:#4f0074;
- }
- */
-/*
- .custom h3 {
- font-family: "Museo", "Hoefler Text", Palatino, "Palatino Linotype", serif;
- color:#ff9600;
- }
- */
+ 
 .custom a:link {
     color: #26013a;
 }
 
-/* FIx this. */
+/* Fix this. */
 .custom a:visited {
     color: #26013a;
 }
