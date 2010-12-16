@@ -692,6 +692,8 @@ p.ltb {
     margin-bottom: 0px;
     /* do not change this! */
     overflow: hidden;
+ /*   font-family: "minion-pro-2", "minion-pro-2", "Georgia", serif; */
+    font-family: "myriad-pro-1", "myriad-pro-2", sans-serif; 
 }
 
 /* widget item setup */
@@ -709,8 +711,8 @@ p.ltb {
     float: left;
     height: 100%;
     /*margin: 7px 10px 0px 0px*/
-    font-size: 11px;
-    /*line-height: 16px;*/
+    font-size: 13px;
+    line-height: 16px;
 }
 
 #footer_setup .footer_items a {
@@ -744,15 +746,24 @@ p.ltb {
     /*line-height:21px;*/
 }
 
+#footer_setup .footer_items ul {
+    margin: 15px;
+    padding: 0px;
+}
+
+#footer_setup .footer_items a.tag-link-3 {
+    margin: 15px;
+    padding: 0px;
+}
+
 /* do not change these! */
 #footer_setup .footer_items ul li {
     list-style: none;
+    padding: 5px 0px;
 }
 
-#footer_setup .footer_items ul {
-    margin: 0px;
-    padding: 0px;
-}
+
+
 
 .custom div.legal {
     background: #00430c url('images/footer-legal.png') no-repeat left top;
@@ -782,6 +793,10 @@ p.ltb {
     background: #356101;
     color: #ff9600;
 }
+
+
+
+
 
 /* Feature box */
 .custom #feature_box {
