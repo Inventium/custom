@@ -6,7 +6,7 @@
 function my_before_content_box () {
 
 ?>
-<table width="970" height="161" border="0" cellpadding="0" cellspacing="0" style="margin: 0px 0px 0px 0px;font-size: 14px; background:url('/wp-content/themes/thesis_18/custom/images/wiaw-featured-new-box.png')">
+<table width="970" height="161" border="0" cellpadding="0" cellspacing="0" style="margin: 0px 0px 0px 0px;font-size: 14px; background:url('wp-content/themes/thesis_18/custom/images/wiaw-featured-new-box.png')">
 
   <tr>
 
