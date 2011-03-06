@@ -1,7 +1,8 @@
 <?php
 
 //////////////// Custom page: header, no footer, no sidebars /////
-function is_page_header_nofooter_nosidebar_18() {
+/*
+function old_page_header_nofooter_nosidebar_18() {
 	global $thesis_design;
 
 	echo apply_filters('thesis_doctype', '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">') . "\n";
@@ -22,7 +23,8 @@ function is_page_header_nofooter_nosidebar_18() {
 
 	#thesis_18/lib/html/frameworks.php Line 56
 	thesis_hook_before_content_area(); #hook
-	echo "<div id=\"content_area\" class=\"full_width\">\n";
+	//echo "<div id=\"content_area\" class=\"full_width\">\n";
+  echo "<div id=\"content_area\"\n";
 	echo "<div class=\"page\">\n";
 	#thesis_18/lib/html/content_box.php Line 57
 	thesis_content_column();
@@ -43,11 +45,12 @@ function is_page_header_nofooter_nosidebar_18() {
 	thesis_hook_after_html(); #hook
 	echo "</body>\n</html>";    
 }
+ */
 //////////////// END: Custom page: header, no footer, no sidebars /////
 
 
 ///////  THESIS 1.8 ////////////////////
-function page_noheader_nofooter_nosidebar_18() {
+function old_page_noheader_nofooter_nosidebar_18() {
 	global $thesis_design;
 
 	echo apply_filters('thesis_doctype', '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">') . "\n";
@@ -66,7 +69,8 @@ function page_noheader_nofooter_nosidebar_18() {
 
 	#thesis_18/lib/html/frameworks.php Line 56
 	thesis_hook_before_content_area(); #hook
-	echo "<div id=\"content_area\" class=\"full_width\">\n";
+	//echo "<div id=\"content_area\" class=\"full_width\">\n";
+  echo "<div id=\"content_area\" \n";
 	echo "<div class=\"page\">\n";
 	#thesis_18/lib/html/content_box.php Line 57
 	thesis_content_column();
@@ -91,7 +95,8 @@ function page_noheader_nofooter_nosidebar_18() {
 
 
 //////////////// Custom page: header, footer, no sidebars /////
-function page_header_footer_nosidebar_18() {
+/*
+function old_page_header_footer_nosidebar_18() {
 	global $thesis_design;
 
 	echo apply_filters('thesis_doctype', '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">') . "\n";
@@ -135,11 +140,14 @@ function page_header_footer_nosidebar_18() {
 	thesis_hook_after_html(); #hook
 	echo "</body>\n</html>";    
 }
+
+ */
 //////////////// END: Custom page: header, footer, no sidebars /////
 
 
-/// Helper functions
 
+
+/// Helper functions
 function is_thesis_two_columns() {
     
 }
