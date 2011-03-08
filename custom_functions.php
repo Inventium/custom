@@ -28,11 +28,12 @@ if (file_exists(THESIS_CUSTOM . '/wiaw_custom_sidebars.php')){
 	include(THESIS_CUSTOM . '/wiaw_custom_sidebars.php');
 }
 
-// This will be a file with helper fucntions.
+// This will be a file with helper functions.
 if (file_exists(THESIS_CUSTOM . '/is_custom_pages.php')){
 	include(THESIS_CUSTOM . '/is_custom_pages.php');
 }
 
+/*
 if (file_exists(THESIS_CUSTOM . '/header_footer_nosidebar_18.php')){
   include(THESIS_CUSTOM . '/header_footer_nosidebar_18.php');
 }
@@ -44,6 +45,7 @@ if (file_exists(THESIS_CUSTOM . '/header_nofooter_nosidebar_18.php')){
 if (file_exists(THESIS_CUSTOM . '/noheader_nofooter_nosidebar_18.php')){
   include(THESIS_CUSTOM . '/noheader_nofooter_nosidebar_18.php');
 }
+*/
 
 if (file_exists(THESIS_CUSTOM . '/wiaw_custom_404.php')){
 	include(THESIS_CUSTOM . '/wiaw_custom_404.php');
