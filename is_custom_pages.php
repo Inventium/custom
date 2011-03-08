@@ -110,6 +110,43 @@ function page_header_footer_nosidebar_18() {
 //////////////// END: Custom page: header, footer, no sidebars /////
 
 
+//////////////// Custom page: header, footer, 1 sidebar /////
+function page_header_footer_sidebar_18() {
+
+  is_pre_page_hooks();
+
+  thesis_header_area();
+  
+  is_pre_content_hooks('');
+  is_sidebar_1_hooks();
+  is_post_content_hooks();
+  
+  thesis_footer_area();
+    
+  is_post_page_hooks();  
+}
+////////////////////////////////////////////////////////////
+
+
+//////////////// Custom page: header, footer, 2 sidebars /////
+function page_header_footer_sidebar2_18() {
+
+  is_pre_page_hooks();
+
+  thesis_header_area();
+  
+  is_pre_content_hooks('');
+  is_sidebar_12_hooks();
+  is_post_content_hooks();
+  
+  thesis_footer_area();
+    
+  is_post_page_hooks();  
+}
+//////////////////////////////////////////////////////////////
+
+
+
 function is_sidebar_1_hooks() {
   
   # content_box.php Line 48
@@ -131,23 +168,6 @@ function is_sidebar_1_hooks() {
 }
 
 
-//////////////// Custom page: header, footer, 1 sidebar /////
-function page_header_footer_sidebar_18() {
-
-  is_pre_page_hooks();
-
-	thesis_header_area();
-	
-  is_pre_content_hooks('');
-  is_sidebar_1_hooks();
-  is_post_content_hooks();
-  
-	thesis_footer_area();
-		
-  is_post_page_hooks();  
-}
-
-
 function sidebar_layout($callback, $id) {
 
   #sidebars.php Line 28
@@ -158,6 +178,7 @@ function sidebar_layout($callback, $id) {
   echo "\t\t\t</div>\n"; 
   
 }
+
 
 function is_sidebar_12_hooks() {
   
@@ -176,70 +197,6 @@ function is_sidebar_12_hooks() {
   # content_box.php Line 51
   echo "\t\t</div>\n";
 
-}
-
-
-
-//////////////// Custom page: header, footer, 2 sidebars /////
-function page_header_footer_sidebar2_18() {
-
-  is_pre_page_hooks();
-
-  thesis_header_area();
-  
-  is_pre_content_hooks('');
-  is_sidebar_12_hooks();
-  is_post_content_hooks();
-  
-  thesis_footer_area();
-    
-  is_post_page_hooks();  
-}
-
-
-
-
-/// Helper functions, stubs
-function is_thesis_two_columns() {
-    
-}
-
-function is_thesis_three_columns() {
-    
-}
-
-
-
-
-
-
-
-
-
-//////////////////////////////  Remove from this file.
-
-
-function page_hrecipe_18() {
-    get_header(apply_filters('thesis_get_header', $name));
-    echo '<div id="container">'."\n";
-    echo '<div id="page">'."\n";
-    thesis_header_area();
-    echo '	<div id="content_box">'."\n";
-    thesis_content_column();
-
-    echo '		<div id="sidebars">' . "\n";
-    echo '			<div id="sidebar_3" class="sidebar">'."\n";
-    echo '				<ul class="sidebar_list">'."\n";
-    dynamic_sidebar('hRecipe Sidebar');
-    echo '				</ul>'."\n";
-    echo '			</div>'."\n";
-    echo '		</div>' . "\n";
-
-    echo '	</div><!--content_box-->'."\n";
-    thesis_footer_area();
-    echo '</div><!--page-->'."\n";
-    echo '</div><!--container-->'."\n";
-    get_footer(apply_filters('thesis_get_footer', $name));
 }
 
 
