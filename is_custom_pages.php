@@ -156,9 +156,7 @@ function is_sidebar_1_hooks() {
   # sidebars.php Line 4
   echo "\t\t<div id=\"sidebars\">\n";
   thesis_hook_before_sidebars(); #hook
-
   sidebar_layout('thesis_sidebar_1', 1);
-  
   thesis_hook_after_sidebars(); #hook
   echo "\t\t</div>\n";  
 
