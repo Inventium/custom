@@ -164,19 +164,6 @@ function is_sidebar_1_hooks() {
 
   # content_box.php Line 51
   echo "\t\t</div>\n";
-
-}
-
-
-function sidebar_layout($callback, $id) {
-
-  #sidebars.php Line 28
-  echo "\t\t\t<div id=\"sidebar_$id\" class=\"sidebar\">\n";
-  echo "\t\t\t\t<ul class=\"sidebar_list\">\n";
-  call_user_func($callback);
-  echo "\t\t\t\t</ul>\n";
-  echo "\t\t\t</div>\n"; 
-  
 }
 
 
@@ -196,8 +183,19 @@ function is_sidebar_12_hooks() {
 
   # content_box.php Line 51
   echo "\t\t</div>\n";
-
 }
+
+
+function sidebar_layout($callback, $id) {
+
+  #sidebars.php Line 28
+  echo "\t\t\t<div id=\"sidebar_$id\" class=\"sidebar\">\n";
+  echo "\t\t\t\t<ul class=\"sidebar_list\">\n";
+  call_user_func($callback);
+  echo "\t\t\t\t</ul>\n";
+  echo "\t\t\t</div>\n";   
+}
+
 
 
 ?>
