@@ -876,3 +876,22 @@ p.ltb {
   content: "$ \0020"; 
 }
 
+.custom fieldset.upshot {
+  background-color:#fff;
+  padding:20px;
+}
+
+.custom fieldset.upshot legend {
+  font-weight: bold;
+  font-size: 125%;
+  background-color:#fff;
+  padding: 3px 8px;
+  margin: 0px 0px 0px 12px;
+}
+
+.custom fieldset.upshot h3 {
+  background-color:#fff;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 10px 0px;
+}
+
