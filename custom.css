@@ -192,6 +192,7 @@ body {
     padding-left: 0px;
 }
 
+/*
 .custom #sidebar_1 {
     width: 170px;
     border: none;
@@ -200,6 +201,7 @@ body {
 .custom #sidebar_2 {
     width: 271px;
 }
+*/
 
 .custom #sidebar_1 .sidebar_list {
     padding-right: 0px;
@@ -209,6 +211,7 @@ body {
     padding-right: 0px;
 }
 
+/*
 .custom #sidebar_1 .sidebar_list li.widget {
     background: url('images/sidebars-left-background.png') no-repeat 0px top;
     padding-top: 16px;
@@ -221,6 +224,7 @@ body {
     line-height: 16px;
     margin: 6px 10px 2px 8px;
 }
+
 
 .custom #sidebar_2 .sidebar_list li.widget {
     background: url('images/sidebars-right-background.png') no-repeat right top;
@@ -235,6 +239,8 @@ body {
     line-height: 16px;
     margin: 6px 10px 2px 8px;
 }
+*/
+
 
 /* Custom Nav */
 .custom .menu {
@@ -463,12 +469,11 @@ body {
    background:#ffffff; 
 }
 
-
+/*
 .custom #sidebars { 
-   /*background:#ffffff;*/ 
 	width: 451px;
 }
-
+*/
 
 .custom #sidebar_1 ul.sidebar_list {
 	border: none;

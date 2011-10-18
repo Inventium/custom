@@ -7,7 +7,8 @@
 /*-----------------------------------------*/
 /* register sidebars for widgetized footer */
 if (function_exists('register_sidebar')) {
-	$sidebars = array(1, 2, 3, 4);
+	//$sidebars = array(1, 2, 3, 4);
+  $sidebars = array(1, 2, 3, 4);
 	foreach($sidebars as $number) {
 		register_sidebar(array(
 			'name' => 'Footer ' . $number,
