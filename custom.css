@@ -706,7 +706,7 @@ p.ltb {
     /* contents alignment */
     text-align: left;
     /* widget width */
-    width: 285px;
+    width: 210px;
     /* space between widgets */
     padding-right: 20px;
     /* text color */
@@ -867,6 +867,7 @@ p.ltb {
     overflow: hidden;
     padding: 0 12px 8px 0 !important;
     width: 50px;
+<<<<<<< HEAD
 }
 
 
@@ -900,3 +901,6 @@ p.ltb {
   margin: 0px 0px 10px 0px;
 }
 
+=======
+}
+>>>>>>> 89a11c3e80972e62a8cd9f115b0f165b42d326c9
