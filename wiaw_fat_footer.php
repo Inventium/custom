@@ -40,12 +40,12 @@ function widgetized_footer() {
     		<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer 3') ) : ?>
     		<?php endif; ?>
 		</div>
-<!--
+
 		<div class="footer_items">
     		<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer 4') ) : ?>
     		<?php endif; ?>
 		</div>
--->		
+		
 	</div>
 <?php
 }

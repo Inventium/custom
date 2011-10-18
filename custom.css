@@ -701,7 +701,7 @@ p.ltb {
     /* contents alignment */
     text-align: left;
     /* widget width */
-    width: 285px;
+    width: 210px;
     /* space between widgets */
     padding-right: 20px;
     /* text color */
@@ -863,16 +863,3 @@ p.ltb {
     padding: 0 12px 8px 0 !important;
     width: 50px;
 }
-
-
-.custom ul.command-list {
-  list-style: none;
-  margin-left: 0;
-  padding-left: 1em;
-  text-indent: -1em;
-}
-.custom ul.command-list li:before {
-  /*content: "\00BB \0020"; */
-  content: "$ \0020"; 
-}
-
